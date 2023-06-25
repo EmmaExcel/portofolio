@@ -192,6 +192,7 @@
     bottom: 0px;
     left: 0px;
     background-color: #4a5759bc;
+    color: white;
 }
 
 .enchantmentContainer {
@@ -205,4 +206,222 @@
 .enchantmentContainer h1 {
     color: white;
     font-size: 80px;
+}
+
+
+/* SKILL SECTION */
+
+.skillSection {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.skillContainer {
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 50px;
+}
+
+.skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    overflow: hidden;
+}
+
+.skill img {
+    height: 335px;
+    width: 370px;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    opacity: 0.5;
+}
+
+.skill h1 {
+    font-size: 32px;
+    font-family: 'Monoton', cursive;
+    font-weight: normal;
+    padding-top: 10px;
+    max-width: 400px;
+}
+
+.skill p {
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    max-width: 400px;
+}
+
+
+/* PROJECT SECTION */
+
+.projectSection {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.projectContainer {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.projectContainer button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #5665679d;
+    border: none;
+    border: 1px solid #737b7cbc;
+    box-shadow: 0px 20px 50px 0px #242323e3;
+    color: #ffffff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    width: 100px;
+    height: 35px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.projectContainer button:before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.203);
+    width: 0%;
+    height: 100%;
+    top: 0;
+    left: -100%;
+    transition: all 0.6s ease;
+    -webkit-transition: all 0.6s ease;
+    -moz-transition: all 0.6s ease;
+    -ms-transition: all 0.6s ease;
+    -o-transition: all 0.6s ease;
+}
+
+.projectContainer button:hover:before {
+    width: 200%;
+    left: -100%;
+}
+
+.projectHeader {
+    display: flex;
+    justify-content: start;
+    font-size: 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    padding: 20px 0;
+}
+
+.projectListContainer {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.project {
+    height: 400px;
+    width: 300px;
+    border: 1px solid #737b7cbc;
+    background-color: #5665679d;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    font-family: 'Inter', sans-serif;
+    gap: 5px;
+    box-shadow: 0px 20px 50px 0px #242323e3;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
+}
+
+.projectImageContainer {
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+}
+
+.projectImageContainer img {
+    display: flex;
+    object-fit: center;
+    width: 100%;
+    height: 100%;
+    transition: ease 1.5s;
+    -webkit-transition: ease 1.5s;
+    -moz-transition: ease 1.5s;
+    -ms-transition: ease 1.5s;
+    -o-transition: ease 1.5s;
+    cursor: pointer;
+}
+
+.projectImageContainer img:hover {
+    transform: scale(1.3);
+    -webkit-transform: scale(1.3);
+    -moz-transform: scale(1.3);
+    -ms-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transition: ease 0.8s;
+    -webkit-transition: ease 0.8s;
+    -moz-transition: ease 0.8s;
+    -ms-transition: ease 0.8s;
+    -o-transition: ease 0.8s;
+}
+
+.project h2,
+.project p {
+    padding-left: 5px;
+}
+
+.project h2 {
+    font-size: 18px;
+}
+
+.project p {
+    font-size: 16px;
+}
+
+.Pfooter {
+    width: 90%;
+    height: 30vh;
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Pfooter p {
+    font-size: 15px;
+    font-family: 'Inter', sans-serif;
+}
+
+.pfooter-icons {
+    display: flex;
+    gap: 20px;
+}
+
+.pfooter-icons a {
+    box-shadow: 0px 20px 20px 1px #181717f4;
 }

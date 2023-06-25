@@ -6,8 +6,8 @@ const Unrivaled = () => {
           <h1>The Unrivaled Developer</h1>
           <p>
             Emma Excel exceeds every expectation with stunning designs and bold
-            motion graphics that keep you mesmerized. Her mastery is unmatched,
-            defeating competitors through a mere swipe of her fingertips.
+            motion graphics that keep you mesmerized. His mastery is unmatched,
+            defeating competitors through a mere swipe of his fingertips.
           </p>
         </div>
         
