@@ -1,19 +1,25 @@
+import "../global.css";
+import { useRef } from "react";
+import { motion } from "framer-motion";
 
-import "../global.css"
 const LandingPage = () => {
- 
+  const scrollRef = useRef(null);
+
   return (
     <>
       <section className="HomeSection">
         <div className="HomeContainer">
-          <div className="HomeInfoContainer">
-            <div className="HomeInfo">
+          <div className="HomeInfoContainer" ref={scrollRef}>
+            <motion.div
+              className="HomeInfo"
+             
+            >
               <p>Emma-Okerhe Excel</p>
               <h1>WEB</h1>
               <h1>DEVELOPER</h1>
               <h1>ON A</h1>
               <h1>QUEST</h1>
-            </div>
+            </motion.div>
           </div>
           <div className="HomeImageContainer">
             <div className="HomeImage">

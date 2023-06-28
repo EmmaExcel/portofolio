@@ -1,4 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Monoton&display=swap');
+:root {
+    --black: #000000;
+    --ash-black: #222;
+    --white: #fafafa;
+    --sky: #00ccff;
+    --green: #22dddd;
+    --blue: #1300ff;
+    --dusk: #6600ff;
+    --purple: #9900ff;
+    --pink: #ff0066;
+    --red: #fe0222;
+    --orange: #fd7702;
+    --yellow: #ffbb00;
+    --background: var(--white);
+    --accent: var(--purple);
+}
+
 .HomeSection {
     height: 100%;
     width: 100%;
@@ -118,6 +135,7 @@
     font-family: 'Monoton', cursive;
     width: 700px;
     font-weight: normal;
+    will-change: transform, opacity, filter;
 }
 
 
@@ -185,14 +203,27 @@
 }
 
 .enchantmentSection::before {
-    content: "";
+    content: "  Experience digital enchantment";
     position: absolute;
     top: 0px;
     right: 0px;
     bottom: 0px;
     left: 0px;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #4a5759bc;
     color: white;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+    color: white;
+    font-size: 80px;
+    font-weight: bold;
 }
 
 .enchantmentContainer {
@@ -206,6 +237,7 @@
 .enchantmentContainer h1 {
     color: white;
     font-size: 80px;
+    font-family: 'Inter', sans-serif;
 }
 
 
@@ -222,10 +254,9 @@
 .skillContainer {
     width: 90%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center;
+    display: flex;
     gap: 50px;
+    column-gap: 0;
 }
 
 .skill {
@@ -238,7 +269,7 @@
 
 .skill img {
     height: 335px;
-    width: 370px;
+    width: 300px;
     border-radius: 15px;
     -webkit-border-radius: 15px;
     -moz-border-radius: 15px;
@@ -424,4 +455,144 @@
 
 .pfooter-icons a {
     box-shadow: 0px 20px 20px 1px #181717f4;
+    border: none;
+}
+
+
+/* TESTING */
+
+ul {
+    width: 100%;
+    padding-top: 25vw;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+}
+
+li {
+    font-size: 2rem;
+    margin-bottom: 1.6rem;
+}
+
+circle {
+    stroke-dashoffset: 0;
+    stroke-width: 15%;
+    fill: none;
+}
+
+h1 {
+    --base-width: 8.2vw;
+    font-size: clamp(20px, var(--base-width), 700px);
+    font-weight: 700;
+    letter-spacing: -0.15rem;
+    line-height: 1.2;
+    text-align: center;
+    margin: 100px 0;
+    white-space: nowrap;
+    position: absolute;
+    top: -10vw;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Inter', sans-serif;
+}
+
+a {
+    font-size: clamp(20px, 6vw, 700px);
+    font-weight: 400;
+    margin: 50px 0 10px;
+    position: absolute;
+    right: 5%;
+    font-family: 'Inter', sans-serif;
+    color: #737b7cbc;
+    cursor: pointer;
+    z-index: 1000000000000000000000000000000;
+}
+
+#sandbox-title {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 20px;
+    border-top: 1px dotted var(--accent);
+    background: rgba(255, 255, 255, 0.7);
+    background-size: 4px 4px;
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    -moz-backdrop-filter: blur(4px);
+    font-size: 14px;
+    line-height: 14px;
+}
+
+section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    scroll-snap-align: center;
+    perspective: 500px;
+}
+
+section>div {
+    aspect-ratio: 4/3;
+    height: 80vh;
+    position: relative;
+    max-height: 90vh;
+    margin: 20px;
+    background: var(--white);
+    overflow: hidden;
+    background: var(--ash-black);
+}
+
+img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#progress {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    transform: rotate(-90deg);
+}
+
+#progress .indicator {
+    stroke: var(--accent);
+}
+
+.progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--accent);
+    bottom: 100px;
+}
+
+.back {
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.privacy-screen {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--accent);
+    z-index: 2;
 }
