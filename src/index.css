@@ -13,12 +13,13 @@
     width: 10px;
     height: 10px;
     /* width of the scroll bar */
+    background-color: transparent;
 }
 
  ::-webkit-scrollbar-track {
     background: #f1f1f1;
     /* color of the track */
-    background-color: #4a5759;
+    background-color: transparent;
 }
 
  ::-webkit-scrollbar-thumb {
@@ -45,6 +46,9 @@
     height: 50px;
     border-radius: 50%;
     background: #b6bebfb7;
+    box-shadow: 0px 5px 90px 0px rgba(246, 246, 246, 0.623);
+    cursor: pointer;
+    z-index: -1;
 }
 
 section>div {
@@ -58,8 +62,7 @@ section>div {
 
 body {
     height: 100%;
-    background-color: #4a5759;
+    background-color: seagreen;
     opacity: 1;
-    background-size: 250px 100px;
-    background-image: repeating-linear-gradient(to right, #535d5f, #535d5f 2px, #4a5759 2px, #4a5759);
+    color: black;
 }

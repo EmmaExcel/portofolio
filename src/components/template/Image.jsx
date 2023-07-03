@@ -11,12 +11,13 @@ export function Image({ alt, category, index, aspectRatio,images, name,link,id  
   const y = useParallax(scrollYProgress, "50vh");
 
   return (
-    <section>
-      <div ref={ref} style={{ aspectRatio }}>
-        <img src={images} alt={alt} />
+    <section className="MainProjectSection">
+      <div className="MainProjectImageContainer" ref={ref} style={{ aspectRatio }}>
+        <img className="MainProjectImage" src={images} alt={alt} />
+        <p>{name}</p>
       </div>
      {/*  <motion.h2 style={{ y }}>{`#00${index}`}</motion.h2> */}
-      <motion.a href={link} style={{ y }}>{name}</motion.a>
+      <motion.a className="MainProjectLink" href={link} style={{ y }}>{`#00${index}`}</motion.a>
     </section>
   );
 }

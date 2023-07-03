@@ -9,10 +9,15 @@ export function Gallery({ category, alt, title, titleWidth, photos }) {
 
   
   return (
-    <article>
-      <h1 style={{ "--base-width": `${titleWidth}vw`, x: "-50%" }}>
-        {title}
+    <article className="ProjectArticle">
+      <h1 className="projectTitle" style={{ "--base-width": `${titleWidth}vw`, x: "-50%" }}>
+        {title}  
+      
       </h1>
+
+      <footer className="back">
+        <Link to="/">Back</Link>
+      </footer>
       {photos.map(({ aspectRatio, images, name,link,id }, index ) => (
         <Image
         key={alt}
@@ -28,10 +33,7 @@ export function Gallery({ category, alt, title, titleWidth, photos }) {
 
         
       ))}
-      <footer className="back">
-        <Link to="/">Back to galleries</Link>
-      </footer>
-      
+   
       <motion.div
         initial={{ scaleX: 1 }}
         animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut" } }}

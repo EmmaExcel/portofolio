@@ -6,16 +6,20 @@ const Transformation = () => {
     <>
       <section className="transSection">
         <div className="transContainer">
-          <motion.p
-             initial={{ x: -70, opacity: 0 }}
-             transition={{ duration: 1, delay: 0.1 }}
-             viewport={{ root: scrollRef }}
-             whileInView={{ x: 0, opacity: 1 }}>About Me</motion.p>
+          {/* <motion.p
+            initial={{ x: -70, opacity: 0, style: { color: "#ffffff7b" } }}
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ root: scrollRef }}
+            whileInView={{ x: 0, opacity: 1, style: { color: "#fff" } }}
+          >
+            About Me
+          </motion.p> */}
           <motion.h1
-      initial={{ y:20, opacity: 0}}
-      transition={{  duration: 1 }}
-          viewport={{ root: scrollRef }}
-          whileInView={{ y: 0, opacity: 1}}>
+            initial={{ y: 20, opacity: 0, style: { color: "#ffffff7b" } }}
+            transition={{ duration: 1 }}
+            viewport={{ root: scrollRef }}
+            whileInView={{ y: 0, opacity: 1, style: { color: "#ffff" } }}
+          >
             Transforming the digital world with eye-catching, interactive
             experiences.
           </motion.h1>

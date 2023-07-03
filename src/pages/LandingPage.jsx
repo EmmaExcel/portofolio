@@ -1,30 +1,40 @@
 import "../global.css";
 import { useRef } from "react";
-import { motion } from "framer-motion";
+import { motion, useIsPresent } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const LandingPage = () => {
   const scrollRef = useRef(null);
-
+  const isPresent = useIsPresent();
   return (
     <>
       <section className="HomeSection">
+        <article className="PageArticle">
+          <ul>
+            <li>
+              <Link to="/Allprojects">Projects</Link>
+            </li>
+          </ul>
+
+          <motion.div
+            initial={{ scaleX: 1 }}
+            animate={{
+              scaleX: 0,
+              transition: { duration: 0.5, ease: "circOut" },
+            }}
+            exit={{
+              scaleX: 1,
+              transition: { duration: 0.5, ease: "circIn" },
+            }}
+            style={{ originX: isPresent ? 0 : 1 }}
+            className="privacy-screen"
+          />
+        </article>
         <div className="HomeContainer">
           <div className="HomeInfoContainer" ref={scrollRef}>
-            <motion.div
-              className="HomeInfo"
-             
-            >
-              <p>Emma-Okerhe Excel</p>
-              <h1>WEB</h1>
-              <h1>DEVELOPER</h1>
-              <h1>ON A</h1>
-              <h1>QUEST</h1>
+            <motion.div className="HomeInfo">
+              <p>.</p>
             </motion.div>
-          </div>
-          <div className="HomeImageContainer">
-            <div className="HomeImage">
-              <img src="/blob.png" alt="" />
-            </div>
           </div>
         </div>
       </section>
