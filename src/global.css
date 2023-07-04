@@ -321,7 +321,7 @@
     font-family: 'Wix Madefor Text', sans-serif;
     text-transform: capitalize;
     font-size: 16px;
-    background-color: #5665679d;
+    background-color: #8f2d56;
     border: none;
     border: 1px solid #737b7cbc;
     box-shadow: 0px 20px 50px 0px #242323e3;
@@ -374,8 +374,8 @@
 
 .projectListContainer {
     gap: 20px;
-    height: 100%;
-    width: 50%;
+    height: 70%;
+    width: 40%;
     display: grid;
     place-items: center;
     overflow: hidden;
@@ -393,8 +393,8 @@
 }
 
 .project {
-    height: 250px;
-    width: 250px;
+    height: 200px;
+    width: 200px;
     border: 1px solid #737b7cbc;
     background-color: #5665676b;
     display: flex;

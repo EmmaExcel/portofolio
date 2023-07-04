@@ -33,7 +33,9 @@ const LandingPage = () => {
         <div className="HomeContainer">
           <div className="HomeInfoContainer" ref={scrollRef}>
             <motion.div className="HomeInfo">
-              <p>.</p>
+              <motion.p whileHover={{ scale: 3.0 }} whileTap={{ scale: 1.2 }} >
+                .
+              </motion.p>
             </motion.div>
           </div>
         </div>
